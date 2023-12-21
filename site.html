@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Aggiornamento agli investitori - Q4 2023</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="da60e2ac-a6e1-496d-94e9-fac88bf9485d" class="page sans"><header><h1 class="page-title">Aggiornamento agli investitori - Q4 2023</h1><p class="page-description"></p></header><div class="page-body"><p id="19e8d970-4ad1-4048-aaf5-3903b703f610" class="">
+</p><figure id="b4a6bf5e-9f68-485d-bf24-178bfc13f61c" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/sb.png"><img style="width:384px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/sb.png"/></a></figure><p id="b96930e5-154b-4ecf-ba96-9f15a7737db0" class="block-color-gray_background">                                                      <strong><mark class="highlight-gray">Q4 2023 Investor Relations Report</mark></strong></p><p id="7e556b77-ebdc-4d39-8461-02ebd6f40a79" class="block-color-gray_background">                                                           <strong><mark class="highlight-gray">    Group Executive Summary</mark></strong></p><p id="d14c1254-437c-42fb-950f-bb79b0d0971c" class=""><mark class="highlight-gray">I settori di maggior interesse commerciale per l’adozione dei nostri SaaS hanno dimostrato nuove reticenze nell’assorbire queste tecnologie nelle loro attività giornaliere, risultando in un  rallentamento di attivazione dalle singole strutture nei diversi ambiti (veterinario, amministrazione condominiale, medicina) raffigurando una sfida molto chiara: la strada che le 5 startup della Bakery si sono date è perseguire l’anno nuovo con una strategia commerciale di business development high-touch e partnerships driven, puntando ad aumentare le opportunità, il tasso di conversione, e quindi le vendite. L’obiettivo chiave è di comunicare con maggior efficacia e a più platee i benefici e caratteristiche dei nostri SaaS, continuando a fare sistema e partecipando ad eventi come è stato fatto nello scorso trimestre. </mark><strong><mark class="highlight-gray">Ricordiamo che siamo in aumento di capitale su ogni iniziativa e per la singola Lab 2 (minimum ticket 100k) e che abbiamo dimezzato il nostro commitment per la costituzione di nuove startup per dedicarci alle iniziative correnti e giungere ad una Exit.</mark></strong></p><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="26f1d407-c39b-433d-9a07-ef7b57015ede"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>In The Spotlight<br/><br/></strong><br/>→ Abbiamo tavoli aperti con partner industriali per ogni iniziativa in portafoglio sia a livello nazionale che internazionale, con una exit prevista per l’ultima iniziativa uscita dalla Lab 2, <br/><em>EsgMax, </em>nell’anno venturo Q4 2024. <br/><br/>→ Nuova iniziativa per la Bakery, <br/><em><strong>Bakery Delivery Service. </strong></em><em>Il purpose è</em><em><strong> </strong></em>renderci attivi nel campo del <strong>Venture Building, </strong>offrendo servizi di problem<strong> </strong>solution fit e realizzazione di MVP per progetti ad hoc delle corporate, che potrebbero diventare partner industriali. Il risultato che puntiamo a raggiungere è un cerchio virtuoso di ingaggio ad hoc con delle corporate dai quali progetti potrebbero nascere partnership strategiche.<br/><br/>→ <br/><em>Donux</em>, il nostro partner UX/UI, ha allargato la suite di prodotti, incominciando ad offrire da inizio trimestre un servizio subscription based per on demand design, <strong>Byte.</strong></div></figure><p id="14877cf8-fe0d-4431-9fd0-8792c9a3757f" class="">🌐 <span style="border-bottom:0.05em solid"><strong>Business Update </strong></span><br/>Le nostre <br/><strong>attività di business development &amp; engagement</strong> ci hanno visti diventare <strong>Partner</strong> dell&#x27;<strong>Osservatorio Open Innovation del Politecnico di Milano (POLIMI)</strong> con un intervento previsto al convegno di presentazione dei risultati a Febbraio 2024. Abbiamo anche partecipato con un intervento al convegno dell&#x27;osservatorio <em>Startup e Hi-tech</em> del Politecnico, e in partnership con <strong>AIFO (Associazione Italiana Family Officer)</strong> stiamo organizzando un evento a fine Gennaio 2024 dove <strong>presenteremo la Bakery come opportunità di investimento ad una platea di 30+ investitori.</strong> Stiamo anche valutando la nostra partecipazione ad eventi strategici con focus family office. Introdotto la piattaforma del <strong>Bakers Club </strong>con i suoi benefici e showroom di iniziative in-house. Abbiamo chiuso <strong>3 nuove assunzioni: </strong>un<strong> </strong>Frontend Engineer, un Admin Manager e un Investor Relations, portando il team a 12 assunti!</p><figure class="block-color-red_background callout" style="white-space:pre-wrap;display:flex" id="d96f68f4-3811-4085-9df2-c1d9f755d24b"><div style="font-size:1.5em"><span class="icon">⛑️</span></div><div style="width:100%"><strong>Call to Action!</strong> <strong>La Bakery cercando un partner industriale </strong>interessato ad entrare in cap table, <strong>valutando anche SGR come fondi di Private Equity:</strong> sarà incisivo trovare un partner forte e strategico che sostenga il gruppo e che aiuti a sfruttare le capacità operative dello studio. Segnalaci ad un partner industriale.</div></figure><hr id="fc5770b9-164b-4ea3-8ba7-605df3cb72b3"/><p id="7f4a1f68-9f21-42a0-aa51-5d873e8bc738" class="">
+</p><figure id="e48d492f-a7fe-4dd8-b5b7-ba0302d682ba" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/esgmax.png"><img style="width:192px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/esgmax.png"/></a></figure><div id="7588eceb-1654-46c4-a45d-a9258c5528d7" class="column-list"><div id="827d5033-8f36-4e81-9b3a-bc70d71510c7" style="width:50%" class="column"><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="6d4660f2-9c69-42b2-9c56-b41e2a29567f"><div style="font-size:1.5em"><span class="icon">🪪</span></div><div style="width:100%"><strong><mark class="highlight-default">Founded</mark></strong><mark class="highlight-default">: Q1 2023<br/><br/></mark><strong><mark class="highlight-default">Team</mark></strong><mark class="highlight-default">: 1<br/><br/></mark><strong><mark class="highlight-default">MVP: </mark></strong><em><mark class="highlight-default">work</mark></em><strong><mark class="highlight-default"> </mark></strong><em><mark class="highlight-default">in progress</mark></em><mark class="highlight-default"><br/><br/></mark><strong><mark class="highlight-default">Runway</mark></strong><mark class="highlight-default">: 12 mesi<br/><br/></mark><strong><mark class="highlight-default">Exit</mark></strong><mark class="highlight-default">: Dicembre 2024<br/> <br/></mark></div></figure></div><div id="86d0169e-c8ed-4f46-9ade-b349c302655e" style="width:50%" class="column"><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="5b9590da-cc64-41be-95c8-abac011dbf67"><div style="font-size:1.5em"><span class="icon">⛑️</span></div><div style="width:100%"><strong>Call to Action! Ricerca partner industriale. </strong>Puoi supportare il successo dell’iniziativa segnalando <em>EsgMax</em> al tuo <strong>commercialista, PMI e strutture di consulenza in ambito sostenibilità.</strong></div></figure></div></div><p id="3952eb14-b380-41a2-a054-416b76a0995b" class=""><span style="border-bottom:0.05em solid"><strong>🌐 Business overview </strong></span></p><p id="b1fbdbd8-53b8-413d-8784-5c2559af1639" class=""><em>EsgMax</em> è posizionata favorevolmente per rispondere alle esigenze del mercato del reporting in ambito sostenibilità: <strong>questo trimestre emergono </strong><strong>due</strong><strong> trattative, una di queste in stadio avanzato con un principale player in ambito ICT con il quale stiamo concordando un percorso di Exit attraverso la definizione di una roadmap basata su obiettivi specifici e KPIs.</strong> Al loro raggiungimento, questo sbloccherà nuove iniezioni di capitale da parte del partner, accompagnando EsgMax verso la Exit. La costituzione del MVP e data di rilascio è prevista nel Q1 2024.  Le ottimizzazioni di prodotto avverranno con frequenza bi-settimanale, calibrando il prodotto via via che si avranno user metrics e feedback. <strong><mark class="highlight-default">Entro fine mese verrà chiuso il seed round di €500k</mark></strong><mark class="highlight-default"> che aiuterà a sviluppare il prodotto </mark>e come obiettivo in virtù del tavolo aperto, il target è di avere <strong>60 clienti entro fine 2024.</strong></p><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="37cdf7db-f6f5-4d4b-83e7-5cddad2ca0f8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>In The Spotlight</strong><br/><br/>→ <br/><strong>Puntare ad una strategia di commercializzazione high-touch &amp; partnerships driven:</strong> con 18 pre-ordini raccolti in soli due mesi, ci attendiamo un tasso di conversioni almeno del 40% entro fine Q1 2024. ✨ <em><strong>Success Story:</strong></em> attraverso un progetto congiunto con una startup in ambito AgriTech per la quale il co-founder è Advisor, <em>EsgMax</em> ha raccolto ben <strong>26 lead</strong> ingaggiando i partecipanti ad un evento tramite lattine branded con su il logo e ‘Carbon Reporting By. EsgMax.’<strong><br/><br/>→ Ingaggiare commercialisti e agenzie commerciali per accedere con maggiore efficacia e in tempi più ridotti il nostro target customer,<br/></strong> ovvero le <strong>PMI e strutture di consulenza in ambito sostenibilità</strong> o che hanno come clienti le PMI stesse. Sono state sviluppate campagne digitali di acquisizione dedicate a costruire un impianto strategico di marketing che permette di stringere agreement con reti e agenzie commerciali nazionali, realtà che nascono per promuovere prodotti legati alle telecomunicazioni e al settore energetico. Un accordo é già stato stretto con una agenzia nazionale a partire da Febbraio 24’, esistono altre <strong>6 di queste agenzie che abbiamo già contattato. </strong></div></figure><p id="3c70e123-727d-475d-af59-ecc84e225f78" class="">Desideri approfondire? Contatta: </p><div id="7e95663e-5f41-451b-925e-994e25be50bd" class="column-list"><div id="b0fda369-8a9d-45fa-9fc5-184f7a39abbf" style="width:12.5%" class="column"><figure id="658f6711-518c-4a6a-95e4-1112afab4c34" class="image" style="text-align:left"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1516321545087.png"><img style="width:96px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1516321545087.png"/></a></figure></div><div id="23f178cf-48cf-43d7-bc95-e618710de81b" style="width:87.5%" class="column"><p id="c9be9243-f378-4f82-a952-500b673ffcd2" class=""><strong>Massimo Ferri<br/><br/></strong><em>Co-Founder</em></p><p id="0a6dbbc0-9f22-4d5e-b1f1-a0e2a82f6e80" class="">massimo.ferri@esgmax.io</p></div></div><hr id="e8957195-e3bb-4e54-afb0-6d12321c19de"/><p id="d4f9159d-e4ba-426c-af48-45360a7e4b1c" class="">
+</p><figure id="3b1592e0-f2f9-4eaa-89d3-d3496b277dd5" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/condeo.png"><img style="width:240px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/condeo.png"/></a></figure><div id="6998241c-35cb-428e-828b-15645eb5a9a1" class="column-list"><div id="94d55c29-1426-46f0-bb68-55c46a066051" style="width:50%" class="column"><figure class="block-color-red_background callout" style="white-space:pre-wrap;display:flex" id="46974801-f80b-4a26-98c4-a15a1a39c824"><div style="font-size:1.5em"><span class="icon">🪪</span></div><div style="width:100%"><strong><mark class="highlight-default">Founded</mark></strong><mark class="highlight-default">: Q1 2021<br/><br/></mark><strong><mark class="highlight-default">Team</mark></strong><mark class="highlight-default">: 5<br/><br/></mark><strong><mark class="highlight-default">Capital raised to date:</mark></strong><mark class="highlight-default"> €700k seed <br/><br/></mark><strong><mark class="highlight-default">Fundraising</mark></strong><mark class="highlight-default"> </mark><strong><mark class="highlight-default">target</mark></strong><mark class="highlight-default">: €1M<br/><br/></mark><strong><mark class="highlight-default">Runway</mark></strong><mark class="highlight-default">: 9 mesi<br/><br/></mark><strong><mark class="highlight-default">PM valuation</mark></strong><mark class="highlight-default">: 7M€<br/><br/></mark><strong><mark class="highlight-default">Exit prevista</mark></strong><mark class="highlight-default">: 2024</mark></div></figure></div><div id="a70e7084-4c0a-4dc3-b050-2d02fce7824f" style="width:49.99999999999999%" class="column"><figure class="block-color-red_background callout" style="white-space:pre-wrap;display:flex" id="4a3ba1cf-a67d-4e39-a780-e61fd29b08eb"><div style="font-size:1.5em"><span class="icon">⛑️</span></div><div style="width:100%"><strong>Call to Action: Ricerca partner industriale. </strong>Puoi supportare il successo dell’iniziativa segnalandoci parter industriali nel <strong>settore energetico, PropTech, gestione condominiale o software house </strong>rispetto alla già presente, <em>Svicom</em><strong>.</strong></div></figure></div></div><p id="6f6e06bd-f031-48f2-af96-704bb9bd2d73" class=""><span style="border-bottom:0.05em solid"><strong>🌐 Business Update <br/><br/></strong></span>Rilevato uno slow down nella ricezione e adozione del prodotto sottolineando un tema non nuovo: nonostante il percorso finora si sia dimostrato florido con un prodotto funzionante e efficiente, la natura sfuggente del cliente rimane per <em>Condeo</em> impegnativa: la priorità è di <strong>attivare delle importanti partnerships per scalare velocemente. <br/><br/></strong>Il marketing<strong> </strong>budget<strong> </strong>verrà  in questo caso ridiretto verso <strong>attività di business development high-touch:</strong> appuntamenti di persona, partecipazione a conferenze e in particolare, <strong>meeting con associazioni terze che si proporranno come bridge a supporto della lead generation.</strong> Ci sono ben 3 tavoli con distinte corporates in ballo. Tra di loro una software house, con la quale è stato fissato il secondo promettente incontro a Gennaio dell’anno venturo. <strong>Alterazioni al modello di prezzo vendita </strong>hanno previsto un passaggio degli abbonati ad un modello forfettario, rallentando la crescita incrementale che ci attendevamo. Il modello verrà rivisto nell’anno venturo. Contiamo 3 nuovi studi amministrative attivi da Giugno 2023 con un totale di 43 studi commercialisti e 1,134 condomini caricati. </p><p id="ab378657-e2a5-4e92-98c1-65e60d582b43" class="">💰 <span style="border-bottom:0.05em solid"><strong>Fundraising</strong></span><br/>In qualità di Co-Founder la Bakery ha investito nell’AuCap Round A a Maggio, round alla quale però, i nostri partner hanno deciso di non partecipare. Questo imprevisto ha bloccato qualsiasi tipo di investimento dalla società per i due trimestri successivi. I costi mantenuti ai minimi hanno significato uno stallo sulla crescita base clienti il che ha evidenziato una sfida importante: <br/><strong>trovare il giusto socio per la prossima fase operativa. </strong></p><figure class="block-color-blue callout" style="white-space:pre-wrap;display:flex" id="041be635-6e72-4750-91c5-391886c51495"><div style="font-size:1.5em"><span class="icon">🎯</span></div><div style="width:100%"><strong>Priority</strong>: Nonostante il CAC delle 5 leads al giorno riportato dalla recente campagna digital su piattaforme Google e Meta fosse del 20% più basso del costo previsto, il tasso di conversione non ha soddisfatto. La strategia di marketing è stata rivista anche in luce di questi numeri e riportata a dedicarsi su una <strong>Lead Generation Partnership</strong> con una chiusura prevista con un partner strategico nel Q1 2024, che svolgerà una funzione di referral di prodotto, aggiungendosi a gli sforzi legati a una attività incisiva per la crescita del business. Secondo obiettivo legato allo stesso tema è l’<strong>ottimizzazione del flusso vendita</strong>: la durata media tra lead generation e meeting confermato attuale è di 4 settimane. Gianluca, Sales Account, sta attualmente eseguendo una cohort analysis. </div></figure><p id="6608443b-21f7-482b-bf7c-41a82b68dd51" class="">Desideri approfondire? Contatta: </p><div id="d5b1dea6-dcf7-40e6-9078-5782b8757044" class="column-list"><div id="ddcdf5f8-a086-4626-97d8-676b72f88865" style="width:12.5%" class="column"><figure id="ffeba576-2fec-45c4-97fa-c4a5cb9e05a0" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1581585876083.png"><img style="width:756px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1581585876083.png"/></a></figure></div><div id="b6564604-6ddd-436f-ae87-09fcbfd23394" style="width:87.5%" class="column"><p id="953b9e0b-f9fb-4b74-b4da-30406994408d" class=""><strong>Giorgio Argentieri<br/><br/></strong><em>Co-Founder</em></p><p id="202ff987-a99d-4a40-adbc-a37203f6576d" class="">giorgio.argentieri@condeo.com</p></div></div><p id="0e8680cd-2a32-4826-945b-2dec2f97230f" class="">
+</p><hr id="93e7f2f6-6381-44dc-93e2-e85a1932b673"/><p id="02d3e4f0-24f4-4613-bd93-b0f3a4cb6f7d" class="">
+</p><figure id="b7931586-e406-45a6-9f19-e4a42eefad6b" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/sencare.png"><img style="width:240px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/sencare.png"/></a></figure><div id="17036996-73e5-440d-ace3-9e0ecf2bfeec" class="column-list"><div id="5edc11db-f5a2-44d8-82d8-57a3e0b8df80" style="width:50%" class="column"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="2c5ca93d-0d3e-43ed-9550-76e729f6c658"><div style="font-size:1.5em"><span class="icon">🪪</span></div><div style="width:100%"><strong>Founded: </strong>Q1<strong> </strong>2022<br/><br/><strong>Team</strong>: 2<strong><br/>Capital raised: €<br/></strong>400k<strong><br/>Fundraising target: €<br/></strong>700k<strong><br/>PM valuation: <br/></strong>€2.5M<strong><br/>Exit: <br/></strong>2024</div></figure></div><div id="c3cc9644-c022-422a-b6d5-139dac326e64" style="width:50%" class="column"><p id="169a7217-b4f1-4379-ba08-95a3689815ae" class="block-color-purple_background">⛑️ <strong>Call to Action! Ricerca partner industriale:</strong> segnala Sencare alla tua struttura medica, corporate nel settore sanitario o system integrators operativi nel settore (software house). <br/><br/><br/></p></div></div><p id="3edd4c6c-1e6d-4f01-9871-1d31105d5748" class=""><span style="border-bottom:0.05em solid"><strong>🌐 Business Update &amp; Fundraising</strong></span></p><p id="00746409-8fcc-462a-b998-a0241ade5b57" class="">Sencare ha avviato il go-to-market nel Q2 di quest’anno attivandosi sulle prime strutture di assistenza domiciliare <em>early adopter. </em><strong>Il mercato risulta particolarmente lento</strong> e l’importanza delle introduzioni e network in questo settore è diventata evidente. Stiamo infatti studiando una strategia in concomitanza con <strong>Vincenzo Papa</strong>, nostro investitore, per sfruttare al meglio il suo mercato e business intelligence per far girare il prodotto all’interno del settore telemedicina. Ci sono tavoli aperti a livello commerciale con gruppi di cliniche interessate a metter in piedi delle soluzioni nel 2024, e con una di queste abbiamo definito gli aspetti economici. Dopo essersi sfumato un accordo nel Q2 per una early Exit di Sencare abbiamo rimandato la Exit al 2024 con la<em> </em>possibilità di far entrare in cap table altri partner industriali rispetto al già presente <em>Consis, </em>che supporteranno Sencare nel generare le metriche obiettivo, ovvero circa 500 assistiti al mese.</p><p id="47ea8901-2818-4735-9ac1-271e5589b9d9" class=""><br/>Desideri approfondire? Contatta: <br/></p><div id="c875c023-3f20-47fe-9878-a2ed427195cd" class="column-list"><div id="347eb10d-771a-4720-8cf2-58c0f66c0ebc" style="width:12.5%" class="column"><figure id="52dedf01-0204-4bf4-badd-10cc02555245" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1677799991715.png"><img style="width:614px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1677799991715.png"/></a></figure></div><div id="15a751d0-d35a-4a01-9282-7d20db3e9aaa" style="width:87.5%" class="column"><p id="33ab9b4b-dca7-4d31-b9cc-135719a261fa" class=""><strong>Andrea Strini<br/><br/></strong><em>Co-Founder</em></p><p id="a21abe29-8434-4932-9aff-627117fb4c88" class=""><a href="https://www.notion.so/Eventi-sencare-b6f36052da824622a0c3018292b6468f?pvs=21">andrea.strini@sencare.io</a></p></div></div><p id="68a75543-4c5c-4268-a22c-9d6559da8dc6" class="">
+</p><hr id="f68b1bd3-8aca-4214-b30d-e22d4d8fc94f"/><p id="4a5f9e56-595b-4c42-8ed5-617da03470fa" class="">
+</p><figure id="bfda1738-6d2d-4649-b01e-46a46a1775d0" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/veterly.png"><img style="width:240px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/veterly.png"/></a></figure><div id="60d8125c-7bed-4c24-a68f-e9d4bbd1601c" class="column-list"><div id="2b25f0f3-a7ea-45f7-af13-e8b3c9889d87" style="width:50%" class="column"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="2bbf1a21-8045-4349-9b41-c2ee43d7e641"><div style="font-size:1.5em"><span class="icon">🪪</span></div><div style="width:100%"><strong>Founded</strong>: Q1 2021<br/><br/><strong>Team</strong>: 3<br/><br/><strong>Capital</strong> <strong>raised</strong>: Seed €520k<br/><br/><strong>Fundraising</strong> <strong>target</strong>: Bridge €500k<br/><br/><strong>PM valuation</strong>: €5.5 million<br/><br/><strong><mark class="highlight-default">Exit</mark></strong><mark class="highlight-default"> </mark><strong><mark class="highlight-default">prevista</mark></strong><mark class="highlight-default">: Q2 - Q4 2024</mark></div></figure></div><div id="dbdb6c26-1349-4310-9395-bad433285666" style="width:50%" class="column"><p id="ee42f49d-8ef1-4aaa-9866-64b229b2eded" class="block-color-blue_background">⛑️ <strong>Call to action! Siamo in aumento di capitale per lancio estero (US). </strong>Puoi anche supportare il successo dell’iniziativa segnalandoci parter industriali nel <strong>settore telemedicina, veterinaria, software house.<br/><br/><br/></strong></p></div></div><p id="9511a557-dfd1-4bbc-8017-eef16f67a2bf" class=""><span style="border-bottom:0.05em solid"><strong>🌐 Business Update </strong></span></p><p id="df0cc4d4-8c16-4b7e-b9dd-aab139c60ee9" class="">Dopo un interesse preliminare, stiamo <strong>riscontrando difficoltà nell’adozione del prodotto</strong> da parte delle cliniche veterinarie Italiane. Una importante percentuale delle cliniche iscritte non ha ancora attivato la loro client base. Abbiamo provato con alcuni intermediari ad accelerare l’adozione ma dopo poco ritorno sull’investimento questa lentezza ci ha spinti a rivolgerci verso nuovi acquirenti interessati. In particolare stiamo esplorando un tavolo aperto sul mercato Statunitense, oltre ad avere un paio di tavoli preliminari aperti in Italia con importanti player del mercato Pet.  </p><figure class="block-color-blue callout" style="white-space:pre-wrap;display:flex" id="8debe323-2e98-4fcb-8a4b-278b7ea5dcb4"><div style="font-size:1.5em"><span class="icon">🎯</span></div><div style="width:100%">Il nostro obiettivo è di concludere una exit (anche parziale del 51%). La fase Bake prevede ora un bridge round  da € 500.000 a supporto della ricerca di product-market fit e traction. Il fabbisogno richiesto sarà inoltre utile per presentare metriche al partner destinato ad acquisire l’iniziativa.</div></figure><p id="a3e886aa-3959-4c0d-aecf-e39fcd478468" class="">Desideri approfondire? Contatta: </p><div id="719486e8-3957-4a7c-b403-9eb6464a1ca9" class="column-list"><div id="9d9bc003-ed0b-43b0-8fa0-d159fee0e1ed" style="width:12.5%" class="column"><figure id="4f592249-57e1-4ae2-942f-777cded59976" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1647261444880.png"><img style="width:741px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/1647261444880.png"/></a></figure></div><div id="5385e393-3016-4a60-a8af-61a89cfc0815" style="width:87.5%" class="column"><p id="b973758a-71c1-4c5f-bf2c-ec936344fd56" class=""><strong>Laura Venturini<br/><br/></strong><em>Co-Founder</em></p><p id="ccc4c28a-e939-4084-901d-57805629763b" class="">laura.venturini@veterly.com</p></div></div><hr id="bf41f1f9-459f-4e9f-acf0-d21a3e178b14"/><p id="6c43cad6-c942-40f4-8417-70cc0f75bf97" class="">
+</p><figure id="4b76dcd4-6d8c-4d41-aa25-df6effadca53" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/donux.png"><img style="width:192px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/donux.png"/></a></figure><div id="c057e4ac-2330-4d8f-a4d9-3e25965ba6d2" class="column-list"><div id="c2ac2cf1-6fbd-4f5a-91b3-8c96ef44f407" style="width:50%" class="column"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="ee6fc888-75e1-4fb0-abeb-a817e67e9497"><div style="font-size:1.5em"><span class="icon">🪪</span></div><div style="width:100%"><strong>Founded</strong><mark class="highlight-default">: 2020<br/><br/></mark><strong><mark class="highlight-default">Team</mark></strong><mark class="highlight-default">: 7<br/><br/></mark><strong><mark class="highlight-default">Ricavi annui</mark></strong><mark class="highlight-default">:  €500k </mark></div></figure></div><div id="a8d2ce9a-daaf-4e9f-914c-dd40847a3f71" style="width:50%" class="column"><p id="0fe76d9a-476f-493d-bdda-dd22f5b1576c" class="block-color-purple_background">⛑️ <strong>Call to action! </strong>Riempire la pipeline di appuntamenti. Qualsiasi aiuto di referral sia ad altre startups che a fondi di PE/VC siamo alla ricerca di business leads.</p></div></div><p id="64fbc50c-4d0e-4e8a-85f4-252362d9d4ab" class=""><span style="border-bottom:0.05em solid"><strong>🌐 Business overview </strong></span></p><p id="b6da6538-34e3-45e8-b3ce-d90122f125d0" class="">Il principale obiettivo per Donux, design studio per prodotti digitali, è raggiungere una diversificazione dei loro attuali flussi di reddito e attività, attualmente project based, e definire un’<strong>offerta di prodotto più dinamica e flessibile per il cliente. </strong>All’inizio del trimestre inaugurano<strong> </strong><a href="https://donux.com/byte"><strong>Byte</strong></a><strong> </strong>che nasce come piattaforma di AI-assisted design senza limite, con un tempo di produzione di 48hrs. Il subscription-based modello di prezzo permette a Donux di aggiungere un secondo flusso di cassa e a diluire il rischio di customer origination. In tutto ciò anche il cash flow diventa più prevedibile grazie al modello subscription-based. La piattaforma è già operativa da inizio Settembre, con il comunicato stampa in onda e Giuseppe, Co-founder, preventivamente è già stato <strong>intervistato da Radio24</strong>. Hanno già ben <strong>4 telefonate in agenda con clienti</strong> principalmente basati negli USA e con i primi inbound lead provenienti dall’estero. </p><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="d9aad2ae-1f61-4854-a1cd-74bf81629cff"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>In The Spotlight<br/><br/></strong><br/><br/><strong>Byte: </strong>subscription-based design SaaS, sfrutta capacità di AI con un catalogo di prodotti di design. La piattaforma è già operativa da inizio Settembre. Visita <a href="https://donux.com/byte"><strong>Byte</strong></a><strong>. </strong><br/><br/><br/><strong>Costs</strong>: a partire dal Q1, riduzione dei costi fissi del team e più contratti freelance per l’implementazione di una struttura maggiormente snella, un’altro tentativo di ottenere maggiori margini di profitto per il business e di controllare la seniority in base a singoli progetti.<br/><br/><br/><strong>Death by LinkedIn</strong><strong>: </strong>il team si sta mobilizzando per portare avanti un approccio commerciale high-touch, partecipando ad eventi e colloqui in presenza e investendo nella creazione di partnerships strategiche, già <strong>chiuse con successo con 5 agenzie</strong> <strong>di marketing &amp; sviluppo </strong>che garantiscono un supporto chiave per evidenziare i servizi di Donux attraverso semplici ma efficaci referral.</div></figure><p id="eeedf9de-02fa-41e8-ad4c-a1d60d9ceef4" class="">Desideri approfondire? Contatta: </p><div id="a0c71320-914d-4f62-944d-2373ed8658a8" class="column-list"><div id="cdbb40c1-186e-4624-872e-df8bcdd58f19" style="width:12.5%" class="column"><figure id="64167550-9f34-41fe-86e8-80d337c63959" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/a4om4LaM2deoF8Dq0hxAG73jwM.png"><img style="width:483px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/a4om4LaM2deoF8Dq0hxAG73jwM.png"/></a></figure><p id="a1eeee00-b472-431f-bd8a-f8b01841a021" class="">
+</p></div><div id="e61f1ffc-3f2d-47f3-a55f-c964fb8cf49e" style="width:87.5%" class="column"><p id="aa281fe4-889d-47ed-a318-ea846d2cee0b" class=""><strong>Giustino Borzacchiello<br/><br/></strong><em>Co-Founder</em></p><p id="6874963f-52d6-40a6-bc11-858e6f3f3960" class="">giustino@donux.com</p></div></div><div id="1f7106bd-61fc-4e72-a2d6-b8e5cc089fbf" class="column-list"><div id="8bbb3a1d-9eee-4dbd-8aa8-4ab6fd965045" style="width:12.5%" class="column"><figure id="8b58be9d-0dda-45aa-a4ab-45506f005c7f" class="image"><a href="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/nWsF9Lojodsi0GMZp9ZBePZlKHk.png"><img style="width:513px" src="Aggiornamento%20agli%20investitori%20-%20Q4%202023%20da60e2aca6e1496d94e9fac88bf9485d/nWsF9Lojodsi0GMZp9ZBePZlKHk.png"/></a></figure></div><div id="d2880fe7-926f-4512-b76e-629c1e79cf42" style="width:87.5%" class="column"><p id="74cd5035-e7bd-4987-a71a-2c09f72c7747" class=""><strong>Giuseppe Mamone<br/><br/></strong><em>Co-Founder</em></p><p id="8c070cf7-2686-4cac-bce9-027969e466ad" class="">giuseppe.mamone@donux.com</p></div></div><hr id="ca4d3256-6ac7-4068-a0f2-57b040916820"/><h1 id="9895337f-768b-4551-bf07-a90149f27af3" class="">Allegati</h1><div id="7ec166d7-b1d9-468a-9f65-10ce3c36593d" class="column-list"><div id="f800861a-26ec-4e0c-9128-279f769ad558" style="width:33.333333333333336%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8ac11bff-bc94-4e35-8e20-5a94b7fafb43"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/1ELvVixM4doEuGY2ovXtaEgaQLbp0M9e-/view?usp=share_link">Startup Bakery</a></div></figure></div><div id="dd7257f8-0b19-4c84-8518-8a39a3fb7563" style="width:33.33333333333333%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="07702259-f314-448b-a781-f0ea6407c46d"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/1Opv60tJIxQLbwQGeIIEUyyNk7shz8vrJ/view?usp=share_link">Startup Bakery Lab</a></div></figure></div><div id="24cb44cc-47bb-46e3-aa24-f2620c8b3be9" style="width:33.33333333333334%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c4dad6cb-4510-4c74-87fe-c91c168d5eff"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/12T6AIZJQ4fOIFTHcIMSnAWDBjQu95zbC/view">EsgMax</a></div></figure></div></div><div id="99c3749d-d366-4c0b-9619-7ca22831fe14" class="column-list"><div id="d701aabd-96f8-41d9-8e40-013844d197bb" style="width:33.333333333333336%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2678c1ac-8931-44d9-8f88-feae9c525cba"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/1iEgh0S05TErMKWRpsOBgZMtySLOBGZG-/view?usp=drive_link">Condeo</a></div></figure></div><div id="4debb0c9-56b6-4247-8ea4-7a7851afdb5b" style="width:33.33333333333333%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2ca0c7dc-e982-49cc-880a-589be0c266bb"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/1PwkFx4bJljfHSgoJA7BaRdHtryxCM5tB/view?usp=drive_link">Sencare</a></div></figure><p id="f4462dae-56d0-4e48-b56f-b43d356174e8" class="">
+</p></div><div id="811a72b8-56de-4332-8db1-24c92d69a967" style="width:33.33333333333334%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="59ef8ffe-1151-47f8-bb1a-d06e6835a425"><div style="font-size:1.5em"><span class="icon">📎</span></div><div style="width:100%"><a href="https://drive.google.com/file/d/1G-gwJb4AN79qf0rf0Osxvv9TYda_H0Kl/view?usp=sharing">Veterly</a></div></figure></div></div><hr id="5acb4758-8b25-4027-a9fd-9643b301f97d"/><h1 id="f3c5ab36-c8f3-435f-8778-29d0ff675ba1" class=""><span style="border-bottom:0.05em solid">Hai una domanda?</span></h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="91e4be0f-e11d-4e0c-9fda-fe07b0adacf4"><div style="font-size:1.5em"><span class="icon">📝</span></div><div style="width:100%">Rispondi a <a href="https://7anmevw3l5c.typeform.com/to/uN6J2QDf">questa survey</a> per fornire un feedback sul report e porre domande.</div></figure><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>FAQ’</strong><strong>s</strong></summary><div class="indented"><ol type="1" id="5d9e2efe-1e08-4031-8b35-281a3e4b3c1b" class="numbered-list" start="1"><li><mark class="highlight-blue"><strong>Quando vengono erogate le certificazioni riguardo l’agevolazione fiscale degli investimenti effettuati?</strong></mark><ol type="a" id="15e645f8-3338-452b-9bdb-400927fd9fb7" class="numbered-list" start="1"><li>Per l’anno fiscale 2023 a Gennaio del 2024.<br/><br/></li></ol></li></ol><ol type="1" id="0c454380-ac7e-4fe1-9779-2040537a84ce" class="numbered-list" start="2"><li><mark class="highlight-blue"><strong>Siete in raccolta di capitale?</strong></mark><ol type="a" id="abd1f094-6ea8-4f4b-939f-200e5856a927" class="numbered-list" start="1"><li>Siamo in AuCap di 3 milioni per la Lab II e sulle singole startup con dei ticket che variano <br/><br/></li></ol></li></ol><ol type="1" id="527cc193-7125-4609-92de-9bf6ca2818b0" class="numbered-list" start="3"><li><mark class="highlight-blue"><strong>Dove posso accedere ai tuoi rendiconti finanziari (cash flow, balance, income statement?)</strong></mark><ol type="a" id="2109a8af-a904-4fdc-afeb-0f4de307ade3" class="numbered-list" start="1"><li>Puoi accedervi attraverso il Baker’s Club. Se desideri approfondire il tema economico finanziario puoi contattare Alessandro Arrigo o Andrea Friso.<br/><br/></li></ol></li></ol><p id="97acc60a-0f30-42d2-be36-f291d946571e" class=""><br/><br/></p><p id="753f7312-4af3-48b1-8aec-004f14acd0db" class="">
+</p></div></details><p id="b32c09f4-a8bf-4d56-9c5f-d017d194c37e" class="">
+</p><p id="f617acaf-a18f-40ce-bfb4-8f1d674e5e70" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
